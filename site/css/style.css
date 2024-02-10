@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+    padding: 0px;
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+header {
+    height: 26rem;
+    margin-bottom: 15px;
+}
+
+header nav {
+    width: 100%;
+    height: 60px;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: fixed;
+    z-index: 100;
+    box-shadow: 1px 2px 5px rgba(11, 11, 11, .3);
+}
+
+header nav h1 {
+    line-height: 60px;
+    margin-left: 10%;
+}
+
+header ul {
+    list-style: none;
+    margin-left: auto;
+    line-height: 60px;
+    margin-right: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+header ul li a {
+    text-decoration: none;
+    margin-left: 12px;
+    color: black;
+}
+
+header .banner {
+    position: relative;
+    width: 100%;
+    height: 26rem;
+    top: 60px;
+    margin-bottom: 5px;
+}
+
+header .banner:hover img {
+    transform: scale(1.05);
+    transition: .5s;
+}
+
+header .banner:hover .banner-text {
+    background-color: rgba(11, 11, 11, .3);
+    transition: .5s;
+}
+
+header .banner img {
+    width: 50%;
+    transition: .5s;
+}
+
+header .banner .banner-text {
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    top: 0px;
+    height: 22.5em;
+    background-color: rgba(11, 11, 11, .1);
+    transition: .5s;
+}
+
+header .banner .banner-text .content {
+    position: absolute;
+    top: 28%;
+    right: 15%;
+}
+
+header .banner .banner-text .content h2 {
+    font-size: 40px;
+}
+
+header .banner .banner-text .content p {
+    margin: 10px 0;
+}
+
+header .banner .banner-text .content a {
+    margin-top: 8px;
+    text-decoration: none;
+    color: black;
+}
+
+header .banner .banner-text .content .button {
+    width: fit-content;
+    height: 40px;
+    padding: 4px 8px;
+    border: 2px solid gray;
+    background-color: transparent;
+    transition: .3s;
+}
+
+header .banner .banner-text .content .button:hover {
+    background-color: grey;
+    color: whitesmoke;
+    transition: .3s;
+    cursor: pointer;
+}
+
+#about {
+    position: relative;
+    margin-top: 20px;
+}
+
+#about .content {
+    padding: 10px;
+}
+
+#about .content h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#about .content p {
+    /* font-size: small; */
+    margin: 5px;
+    padding: 8px 0px;
+}
+
+#about img {
+    position: absolute;
+    top: -40%;
+    right: 15px;
+    z-index: -2;
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+}
+
+#partner {
+    margin: 5px 0px;
+}
+
+#partner h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#partner p {
+    padding: 10px;
+    margin: 5px;
+}
+
+.partners {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    justify-content: space-around;
+}
+
+.partner {
+    width: 300px;
+    height: 300px;
+    box-shadow: 1px 2px 5px rgba(11, 11, 11, .3);
+    text-align: center;
+    margin: 5px;
+    transition: .3s;
+}
+
+.partner:hover {
+    transform: scale(1.03);
+    transition: .3s;
+}
+
+.partner h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.partner img {
+    width: 300px;
+    aspect-ratio: 3/2;
+    mix-blend-mode: color-burn;
+    object-fit: contain;
+    margin-bottom: 3px;
+}
+
+footer {
+    background-color: rgba(11, 11, 11, .5);
+    width: 100%;
+    height: fit-content;
+    color: whitesmoke;
+    clear: both;
+    display: flex;
+    flex-direction: row;
+}
+
+footer .info {
+    margin-right: auto;
+    width: 50%;
+    padding: 25px;
+    text-align: center;
+}
+
+footer .info h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 20px;
+}
+
+footer .info p {
+    margin: 10px 0px;
+    
+}
+
+footer form {
+    margin-right: auto;
+    width: 40%;
+    padding: 25px;
+}
+
+footer form h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0px;
+}
+
+footer form .form-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+footer form .form-group .form-control {
+    margin: 4px 0;
+    padding: 6px;
+}
+
+footer form button {
+    margin-top: 6px;
+    border: 1px solid whitesmoke;
+    padding: 6px 8px;
+    background-color: transparent;
+    color: whitesmoke;
+}
+
+footer form button:hover {
+    background-color: darkgray;
+}
